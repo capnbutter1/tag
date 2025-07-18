@@ -18,7 +18,7 @@ public class MovementScript : MonoBehaviour
 
 
     public Transform groundCheck;
-    public float groundDistance = 0.1f;
+    public float groundDistance = 0.2f;
     public LayerMask groundMask;
     bool isGrounded;
 
@@ -26,11 +26,11 @@ public class MovementScript : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Grounded: " + isGrounded);
+        
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        Debug.DrawRay(groundCheck.position, Vector3.down * 0.1f, Color.green);
+       
 
         float x = Input.GetAxisRaw("Horizontal");
         float z = Input.GetAxisRaw("Vertical");
@@ -75,28 +75,15 @@ public class MovementScript : MonoBehaviour
 
     void Jumping()
     {
-        Debug.Log("isGrounded: " + isGrounded);
-
-        if (Input.GetButtonDown("Jump"))
-        {
-            Debug.Log("Jump key detected");
-        }
+       
 
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
-            Debug.Log("Jump pressed");
+            
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
 
 
-    }
-  void OnDrawGizmosSelected()
-    {
-        if (groundCheck != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(groundCheck.position, groundDistance);
-        }
     }
 }

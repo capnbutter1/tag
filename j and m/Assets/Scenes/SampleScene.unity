@@ -206,8 +206,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21212736, y: 0.002729028, z: -0.0005923854, w: 0.97723806}
-  m_LocalPosition: {x: -0.023815565, y: 2.8497345, z: -4.2640185}
+  m_LocalRotation: {x: 0.2110902, y: 0.0027296839, z: -0.0005894952, w: 0.9774626}
+  m_LocalPosition: {x: -0.023815565, y: 2.838816, z: -4.2640185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -320,8 +320,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 774313915}
   - {fileID: 1935940420}
+  - {fileID: 774313915}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &407824822
@@ -346,7 +346,7 @@ MonoBehaviour:
   groundDistance: 0.1
   groundMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 8
 --- !u!143 &407824823
 CharacterController:
   m_ObjectHideFlags: 0
@@ -591,7 +591,7 @@ GameObject:
   - component: {fileID: 627813096}
   - component: {fileID: 627813095}
   - component: {fileID: 627813094}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Playing Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1000,10 +1000,10 @@ MonoBehaviour:
       Height: 2.77
     Center:
       Radius: 5.81
-      Height: 0.41
+      Height: 0.17
     Bottom:
       Radius: 3.1
-      Height: 0.26
+      Height: -0.92
     SplineCurvature: 0.5
   RecenteringTarget: 2
   HorizontalAxis:
@@ -1087,8 +1087,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402657727}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21212739, y: 0.0027290285, z: -0.00059238554, w: 0.97723806}
-  m_LocalPosition: {x: -0.023815565, y: 2.8497345, z: -4.2640185}
+  m_LocalRotation: {x: 0.21109019, y: 0.0027296834, z: -0.00058949506, w: 0.9774626}
+  m_LocalPosition: {x: -0.023815565, y: 2.838816, z: -4.2640185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1174,7 +1174,7 @@ Transform:
   m_GameObject: {fileID: 1935940416}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.3, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
